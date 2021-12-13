@@ -9,13 +9,22 @@
       "ServiceManager/1.0.0": {
         "dependencies": {
           "Entities": "1.0.0",
-          "RepositoryFacade": "1.0.0"
+          "RepositoryFacade": "1.0.0",
+          "ServiceFacade": "1.0.0"
         },
         "runtime": {
           "ServiceManager.dll": {}
         }
       },
+      "DataModels/1.0.0": {
+        "runtime": {
+          "DataModels.dll": {}
+        }
+      },
       "Entities/1.0.0": {
+        "dependencies": {
+          "DataModels": "1.0.0"
+        },
         "runtime": {
           "Entities.dll": {}
         }
@@ -27,11 +36,24 @@
         "runtime": {
           "RepositoryFacade.dll": {}
         }
+      },
+      "ServiceFacade/1.0.0": {
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
+        "runtime": {
+          "ServiceFacade.dll": {}
+        }
       }
     }
   },
   "libraries": {
     "ServiceManager/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -42,6 +64,11 @@
       "sha512": ""
     },
     "RepositoryFacade/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ServiceFacade/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

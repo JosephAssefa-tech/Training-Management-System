@@ -25,6 +25,19 @@
           "bin/placeholder/Entities.dll": {}
         }
       },
+      "RepositoryFacade/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RepositoryFacade.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RepositoryFacade.dll": {}
+        }
+      },
       "ServiceFacade/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -36,6 +49,21 @@
         },
         "runtime": {
           "bin/placeholder/ServiceFacade.dll": {}
+        }
+      },
+      "ServiceManager/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Entities": "1.0.0",
+          "RepositoryFacade": "1.0.0",
+          "ServiceFacade": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ServiceManager.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ServiceManager.dll": {}
         }
       }
     }
@@ -51,16 +79,27 @@
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
     },
+    "RepositoryFacade/1.0.0": {
+      "type": "project",
+      "path": "../RepositoryFacade/RepositoryFacade.csproj",
+      "msbuildProject": "../RepositoryFacade/RepositoryFacade.csproj"
+    },
     "ServiceFacade/1.0.0": {
       "type": "project",
       "path": "../ServiceFacade/ServiceFacade.csproj",
       "msbuildProject": "../ServiceFacade/ServiceFacade.csproj"
+    },
+    "ServiceManager/1.0.0": {
+      "type": "project",
+      "path": "../ServiceManager/ServiceManager.csproj",
+      "msbuildProject": "../ServiceManager/ServiceManager.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Entities >= 1.0.0",
-      "ServiceFacade >= 1.0.0"
+      "ServiceFacade >= 1.0.0",
+      "ServiceManager >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -100,6 +139,9 @@
             },
             "D:\\BootCampAug2\\FullStack\\Projects\\TrainingManagementSystem\\Training Information Management System\\ServiceFacade\\ServiceFacade.csproj": {
               "projectPath": "D:\\BootCampAug2\\FullStack\\Projects\\TrainingManagementSystem\\Training Information Management System\\ServiceFacade\\ServiceFacade.csproj"
+            },
+            "D:\\BootCampAug2\\FullStack\\Projects\\TrainingManagementSystem\\Training Information Management System\\ServiceManager\\ServiceManager.csproj": {
+              "projectPath": "D:\\BootCampAug2\\FullStack\\Projects\\TrainingManagementSystem\\Training Information Management System\\ServiceManager\\ServiceManager.csproj"
             }
           }
         }

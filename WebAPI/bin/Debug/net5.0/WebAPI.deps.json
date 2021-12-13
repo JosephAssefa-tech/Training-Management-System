@@ -326,7 +326,18 @@
           "WebAPI.dll": {}
         }
       },
+      "DataModels/1.0.0": {
+        "runtime": {
+          "DataModels.dll": {}
+        },
+        "compile": {
+          "DataModels.dll": {}
+        }
+      },
       "Entities/1.0.0": {
+        "dependencies": {
+          "DataModels": "1.0.0"
+        },
         "runtime": {
           "Entities.dll": {}
         },
@@ -2047,6 +2058,11 @@
   },
   "libraries": {
     "WebAPI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -13,3 +13,5 @@ D:\BootCampAug2\FullStack\Projects\TrainingManagementSystem\Training Information
 D:\BootCampAug2\FullStack\Projects\TrainingManagementSystem\Training Information Management System\ServiceFacade\bin\Debug\net5.0\Entities.dll
 D:\BootCampAug2\FullStack\Projects\TrainingManagementSystem\Training Information Management System\ServiceFacade\bin\Debug\net5.0\Entities.pdb
 D:\BootCampAug2\FullStack\Projects\TrainingManagementSystem\Training Information Management System\ServiceFacade\obj\Debug\net5.0\ServiceFacade.csproj.CopyComplete
+D:\BootCampAug2\FullStack\Projects\TrainingManagementSystem\Training Information Management System\ServiceFacade\bin\Debug\net5.0\DataModels.dll
+D:\BootCampAug2\FullStack\Projects\TrainingManagementSystem\Training Information Management System\ServiceFacade\bin\Debug\net5.0\DataModels.pdb
