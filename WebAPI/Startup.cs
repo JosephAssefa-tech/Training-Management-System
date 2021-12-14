@@ -4,6 +4,10 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using RepositoryFacade;
+using RepositoryManager;
+using ServiceFacade;
+using ServiceManager;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +28,9 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddScoped<ITrainigServiceCRUD, TrainingService>();
+            services.AddScoped<ITrainingRepository, TrainingRepository>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

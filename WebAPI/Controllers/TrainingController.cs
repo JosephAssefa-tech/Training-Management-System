@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Entities;
+using Microsoft.AspNetCore.Mvc;
 using ServiceFacade;
 using ServiceManager;
 using System;
@@ -16,21 +17,27 @@ namespace WebAPI.Controllers
     public class TrainingController : ControllerBase
     {
 
-        TrainingService manager;
-        public TrainingController(TrainingService service)
+        ITrainigServiceCRUD manager;
+        public TrainingController(ITrainigServiceCRUD service)
         {
             this.manager = service;
-
+             
 
         }
 
         // GET: api/<TrainingController>
         [HttpGet]
-        public List<TrainingModel> GetAllTraining()
+        [Route("GetAll")]
+        public List<TrainingModel> GetAll()
         {
-            this.manager.GetAllTraining();
-         
-
+            List<TrainingEntity> entities = this.manager.GetAllTraining();
+            List<TrainingModel> models = new List<TrainingModel>();
+            foreach (var entity in entities)
+            {
+                TrainingModel model = new TrainingModel(entity);
+                models.Add(model);
+            }
+            return models;
 
         }
 
@@ -43,20 +50,44 @@ namespace WebAPI.Controllers
 
         // POST api/<TrainingController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Save([FromBody] TrainingModel training)
         {
+            string result = this.manager.Save(training.MapToEntity<TrainingEntity>());
+            if (result == "Saved Sucessfully")
+            {
+
+
+            }
+            else
+            {
+
+            }
+
         }
 
         // PUT api/<TrainingController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Update([FromBody] TrainingModel training)
         {
-        }
+            string result = this.manager.Update(training.MapToEntity<TrainingEntity>());
+            if (result == "Updated Sucessfully")
+            {
 
+
+            }
+            else
+            {
+
+            }
+
+
+        }
         // DELETE api/<TrainingController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+
+
         }
     }
 }
