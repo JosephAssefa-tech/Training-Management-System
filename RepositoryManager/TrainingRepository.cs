@@ -1,6 +1,7 @@
 ﻿using DataAcessLogic;
 using DataModels.Models;
 using Entities;
+using Microsoft.EntityFrameworkCore;
 using RepositoryFacade;
 using System;
 using System.Collections.Generic;
@@ -34,7 +35,7 @@ namespace RepositoryManager
 
         public List<TrainingEntity> GetAllTraining()
         {
-            List<TableTraining> tables = context.TableTrainings.ToList();
+            List<TableTraining> tables = context.TableTrainings.Include(x=>x.TrainingType).ToList();
             List<TrainingEntity> entites = new List<TrainingEntity>();
 
             foreach(var table in tables)

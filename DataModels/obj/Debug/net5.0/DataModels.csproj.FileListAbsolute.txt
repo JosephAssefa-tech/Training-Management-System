@@ -9,3 +9,4 @@ D:\BootCampAug2\FullStack\Projects\TrainingManagementSystem\Training Information
 D:\BootCampAug2\FullStack\Projects\TrainingManagementSystem\Training Information Management System\DataModels\obj\Debug\net5.0\DataModels.dll
 D:\BootCampAug2\FullStack\Projects\TrainingManagementSystem\Training Information Management System\DataModels\obj\Debug\net5.0\ref\DataModels.dll
 D:\BootCampAug2\FullStack\Projects\TrainingManagementSystem\Training Information Management System\DataModels\obj\Debug\net5.0\DataModels.pdb
+D:\BootCampAug2\FullStack\Projects\TrainingManagementSystem\Training Information Management System\DataModels\obj\Debug\net5.0\DataModels.csproj.AssemblyReference.cache

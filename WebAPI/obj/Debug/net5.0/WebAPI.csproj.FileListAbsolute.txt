@@ -82,3 +82,8 @@ D:\BootCampAug2\FullStack\Projects\TrainingManagementSystem\Training Information
 D:\BootCampAug2\FullStack\Projects\TrainingManagementSystem\Training Information Management System\WebAPI\bin\Debug\net5.0\ServiceManager.pdb
 D:\BootCampAug2\FullStack\Projects\TrainingManagementSystem\Training Information Management System\WebAPI\bin\Debug\net5.0\DataAcessLogic.pdb
 D:\BootCampAug2\FullStack\Projects\TrainingManagementSystem\Training Information Management System\WebAPI\bin\Debug\net5.0\RepositoryFacade.pdb
+D:\BootCampAug2\FullStack\Projects\TrainingManagementSystem\Training Information Management System\WebAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\BootCampAug2\FullStack\Projects\TrainingManagementSystem\Training Information Management System\WebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\BootCampAug2\FullStack\Projects\TrainingManagementSystem\Training Information Management System\WebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\BootCampAug2\FullStack\Projects\TrainingManagementSystem\Training Information Management System\WebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\BootCampAug2\FullStack\Projects\TrainingManagementSystem\Training Information Management System\WebAPI\obj\Debug\net5.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs
