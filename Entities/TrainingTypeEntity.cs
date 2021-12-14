@@ -22,6 +22,10 @@ namespace Entities
             this.Name = table.Name;
 
         }
+        public TrainingTypeEntity()
+        {
+
+        }
 
 
         public T MapToTable<T>() where T : class
