@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 using RepositoryFacade;
 using RepositoryManager;
 using ServiceFacade;
@@ -31,6 +32,10 @@ namespace WebAPI
             services.AddControllers();
             services.AddScoped<ITrainigServiceCRUD, TrainingService>();
             services.AddScoped<ITrainingRepository, TrainingRepository>();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Training Management System APi", Version = "v1" });
+            });
 
         }
 
@@ -59,6 +64,9 @@ namespace WebAPI
             {
                 endpoints.MapControllers();
             });
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Training Management System APi APi v1"));
+
         }
     }
 }
