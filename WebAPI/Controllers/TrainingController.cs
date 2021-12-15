@@ -18,9 +18,15 @@ namespace WebAPI.Controllers
     {
 
         ITrainigServiceCRUD manager;
-        public TrainingController(ITrainigServiceCRUD service)
+        ITrainingService _service;
+
+
+        public TrainingController(ITrainigServiceCRUD services, ITrainingService service)
         {
-            this.manager = service;
+            this.manager = services;
+            this._service = service;
+      
+
              
 
         }
@@ -43,20 +49,26 @@ namespace WebAPI.Controllers
 
         // GET api/<TrainingController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public string  Get(int id)
         {
             return "value";
+           
+
         }
 
         // POST api/<TrainingController>
         [HttpPost]
-        public void Save([FromBody] TrainingModel training)
+        [Route("Save")]
+        public string  Save([FromBody] TrainingModel training)
         {
             string result = this.manager.Save(training.MapToEntity<TrainingEntity>());
+            return result;
+
             if (result == "Saved Sucessfully")
             {
 
 
+             
             }
             else
             {
