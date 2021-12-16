@@ -51,7 +51,7 @@ namespace WebAPI.Controllers
         [HttpGet("{id}")]
         public string  Get(int id)
         {
-            return "value";
+            return "something here";
            
 
         }
